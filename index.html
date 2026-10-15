@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>카탄(CATAN) 초보자 가이드 | 모바일 룰북</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="mobile-container">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="header-top">
+        <div class="brand">
+          <span class="catan-badge">CATAN</span>
+          <h1>카탄 초보자 가이드</h1>
+        </div>
+        <span class="header-sub-tag">모바일 룰북</span>
+      </div>
+
+      <!-- Step Navigation Bar -->
+      <nav class="nav-scroller" id="navScroller">
+        <button class="nav-tab active" data-step="1">
+          <span class="tab-num">01</span>
+          <span class="tab-label">개요 & 승리</span>
+        </button>
+        <button class="nav-tab" data-step="2">
+          <span class="tab-num">02</span>
+          <span class="tab-label">기본 구성품</span>
+        </button>
+        <button class="nav-tab" data-step="3">
+          <span class="tab-num">03</span>
+          <span class="tab-label">추가 구성품</span>
+        </button>
+        <button class="nav-tab" data-step="4">
+          <span class="tab-num">04</span>
+          <span class="tab-label">보드판 배치</span>
+        </button>
+        <button class="nav-tab" data-step="5">
+          <span class="tab-num">05</span>
+          <span class="tab-label">게임 진행</span>
+        </button>
+        <button class="nav-tab" data-step="6">
+          <span class="tab-num">06</span>
+          <span class="tab-label">점수 계산</span>
+        </button>
+        <button class="nav-tab" data-step="7">
+          <span class="tab-num">07</span>
+          <span class="tab-label">핵심 FAQ</span>
+        </button>
+      </nav>
+      <div class="progress-bar-bg">
+        <div class="progress-bar-fill" id="progressBar"></div>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="content-area" id="contentArea">
+
+      <!-- ================= STEP 1: 개요 & 승리 조건 ================= -->
+      <section class="step-card active" id="step-1">
+        <div class="hero-box">
+          <div class="catan-island-tag">🏝️ 카탄 섬 개척</div>
+          <h2 class="hero-title">카탄 (CATAN)</h2>
+          <p class="hero-desc">미지의 카탄 섬을 개척하여 자원을 모으고 도로, 마을, 도시를 건설해 나가는 보드게임입니다.</p>
+        </div>
+
+        <div class="victory-highlight-card">
+          <div class="trophy-icon">🏆</div>
+          <div class="victory-info">
+            <span class="vic-sub">게임 승리 조건</span>
+            <div class="vic-points">승점 <span>10점</span></div>
+            <p class="vic-desc">가장 먼저 승점 <strong>10점</strong>을 달성하고 선언하면 그 즉시 승리합니다!</p>
+          </div>
+        </div>
+
+        <div class="intro-grid">
+          <div class="info-bubble">
+            <div class="bubble-icon">👥</div>
+            <div class="bubble-title">추천 인원</div>
+            <div class="bubble-text">3 ~ 4명 (3인 시 빨간색 말 제외)</div>
+          </div>
+          <div class="info-bubble">
+            <div class="bubble-icon">⏱️</div>
+            <div class="bubble-title">소요 시간</div>
+            <div class="bubble-text">약 60 ~ 90분</div>
+          </div>
+          <div class="info-bubble">
+            <div class="bubble-icon">⭐</div>
+            <div class="bubble-title">시작 점수</div>
+            <div class="bubble-text">마을 2개로 시작 (마을 1개당  1점이니, 이미 2점 확보!)</div>
+          </div>
+          <div class="info-bubble">
+            <div class="bubble-icon">🎲</div>
+            <div class="bubble-title">주요 요소</div>
+            <div class="bubble-text">주사위 던져 자원 생산 + 플레이어/카드보관함 간 거래 협상</div>
+          </div>
+        </div>
+
+        <div class="tip-box">
+          <span class="tip-icon">💡</span>
+          <div class="tip-content">
+            <strong>초보자를 위한 핵심 팁</strong>
+            <p style="white-space: normal; margin: 0; word-break: keep-all;">카탄은 주사위 운만으로 결정되는 게임이 아닙니다! 숫자 확률과 자원 조합을 살펴 좋은 자리에 정착지를 놓고, 부족한 자원은 다른 플레이어와의 거래와 협상으로 채우세요. 도로를 알맞게 뻗어 다음 정착지 자리를 확보하는 것까지 이어지면 승리에 한층 가까워집니다.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= STEP 2: 기본 구성품 ================= -->
+      <section class="step-card" id="step-2">
+        <div class="section-lead">
+          게임에 사용되는 5대 자원 카드와 플레이어 말, 주사위 토큰을 확인하세요.
+        </div>
+
+        <!-- 1. 5 Resource Cards -->
+        <div class="component-card">
+          <div class="comp-header">
+            <div class="comp-badge green">자원 카드</div>
+            <h3>5가지 자원 카드 (Resource Cards)</h3>
+          </div>
+          <div class="comp-photo-wrap">
+            <img src="assets/resource_cards.png" alt="자원 카드 5종" class="comp-photo" onclick="openLightbox(this.src, '5가지 자원 카드')">
+            <div class="photo-caption">▲ 5종 자원카드 (목재, 벽돌, 양모, 곡물, 광석)</div>
+          </div>
+          <p class="comp-desc">각 지형에 마을이나 도시가 인접해 있으면 주사위 결과에 따라 아래 자원을 획득합니다:</p>
+          
+          <div class="resource-pill-grid">
+            <div class="res-item wood">
+              <div class="res-icon">🌲</div>
+              <div class="res-name">나무 (목재)</div>
+              <div class="res-terrain">숲 타일</div>
+            </div>
+            <div class="res-item brick">
+              <div class="res-icon">🧱</div>
+              <div class="res-name">흙 (벽돌)</div>
+              <div class="res-terrain">언덕 타일</div>
+            </div>
+            <div class="res-item sheep">
+              <div class="res-icon">🐑</div>
+              <div class="res-name">양 (양모)</div>
+              <div class="res-terrain">초원 타일</div>
+            </div>
+            <div class="res-item wheat">
+              <div class="res-icon">🌾</div>
+              <div class="res-name">밀 (곡물)</div>
+              <div class="res-terrain">농지 타일</div>
+            </div>
+            <div class="res-item ore">
+              <div class="res-icon">⛏️</div>
+              <div class="res-name">철 (광석)</div>
+              <div class="res-terrain">산 타일</div>
+            </div>
+            <div class="res-item desert">
+              <div class="res-icon">🏜️</div>
+              <div class="res-name">사막 (무생산)</div>
+              <div class="res-terrain">자원 없음 / 도둑 서식</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Player Pieces -->
+        <div class="component-card">
+          <div class="comp-header">
+            <div class="comp-badge blue">플레이어 말</div>
+            <h3>플레이어 구성물 (4가지 색상)</h3>
+          </div>
+          <p class="comp-desc">각 플레이어는 1가지 색상(빨강, 파랑, 주황, 하양)을 선택하여 아래 구성물을 받습니다:</p>
+
+          <div class="piece-detail-grid">
+            <div class="piece-card">
+              <div class="piece-img-box">
+                <img src="assets/piece_village.png" alt="마을 말" class="piece-thumb" onclick="openLightbox(this.src, '마을 구성물')">
+              </div>
+              <div class="piece-info">
+                <strong>마을 (Settlement)</strong>
+                <span class="count">플레이어당 5개</span>
+                <span class="score-tag">승점 1점</span>
+                <p>교차점에 건설. 인접 지형에서 자원 1장 생산.</p>
+              </div>
+            </div>
+
+            <div class="piece-card">
+              <div class="piece-img-box">
+                <img src="assets/piece_city.png" alt="도시 말" class="piece-thumb" onclick="openLightbox(this.src, '도시 구성물')">
+              </div>
+              <div class="piece-info">
+                <strong>도시 (City)</strong>
+                <span class="count">플레이어당 4개</span>
+                <span class="score-tag orange">승점 2점</span>
+                <p>기존 마을을 확장. 인접 지형에서 자원 2장씩 대량 생산!</p>
+              </div>
+            </div>
+
+            <div class="piece-card">
+              <div class="piece-img-box">
+                <img src="assets/piece_road.png" alt="길 말" class="piece-thumb" onclick="openLightbox(this.src, '도로 구성물')">
+              </div>
+              <div class="piece-info">
+                <strong>길 (Road / 도로)</strong>
+                <span class="count">플레이어당 15개</span>
+                <span class="score-tag gray">연결 통로</span>
+                <p>지형 변 위에 건설. 새로운 마을을 짓기 위해 뻗어나가는 길.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Number Chips & Robber -->
+        <div class="component-card">
+          <div class="comp-header">
+            <div class="comp-badge purple">보드 오브젝트</div>
+            <h3>숫자 칩 & 도둑 말</h3>
+          </div>
+
+          <div class="sub-object-row">
+            <div class="sub-obj">
+              <img src="assets/number_chips.png" alt="숫자 칩" class="sub-obj-img" onclick="openLightbox(this.src, '숫자 칩')">
+              <div>
+                <strong>숫자 칩 (Number Tokens)</strong>
+                <p>2부터 12까지(7 제외)의 숫자가 적힌 칩입니다. 주사위 합이 이 숫자와 일치하면 자원이 나옵니다. <strong>빨간색 6과 8</strong>은 나올 확률이 가장 높은 황금 땅입니다!</p>
+              </div>
+            </div>
+
+            <div class="sub-obj">
+              <img src="assets/robber.png" alt="도둑 말" class="sub-obj-img robber-img" onclick="openLightbox(this.src, '도둑 말')">
+              <div>
+                <strong>도둑 말 (The Robber)</strong>
+                <p>검은색 도둑 말입니다. 처음에는 사막에 배치되며, 주사위 7이 나오거나 기사 카드를 쓸 때마다 이동하여 상대의 자원을 훔치고 타일 생산을 틀어막습니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= STEP 3: 추가 구성품 ================= -->
+      <section class="step-card" id="step-3">
+        <div class="section-lead">
+          승패를 가르는 <strong>특별 승점 카드</strong>와 <strong>건설비용 참조표</strong>, <strong>발전 카드 3종</strong>입니다.
+        </div>
+
+        <!-- Special Victory Point Cards -->
+        <div class="component-card highlight-border">
+          <div class="comp-header">
+            <div class="comp-badge gold">특별 승점 카드</div>
+            <h3>최장 교역로 & 최강 기사단 (각 2점)</h3>
+          </div>
+          <p class="comp-desc">이 카드들은 조건만 맞으면 언제든 <strong>다른 플레이어에게 빼앗길 수 있는</strong> 유동적인 2점짜리 특수 보너스 카드입니다!</p>
+
+          <div class="special-cards-grid">
+            <div class="spec-card">
+              <div class="spec-img-wrap">
+                <img src="assets/longest_road.png" alt="최장 교역로 카드" class="spec-img" onclick="openLightbox(this.src, '최장 교역로 카드 (+2점)')">
+              </div>
+              <div class="spec-body">
+                <h4>최장 교역로 (Longest Road)</h4>
+                <div class="spec-vp">+2점</div>
+                <ul class="spec-list">
+                  <li>도로를 끊기지 않고 한 줄로 <strong>5개 이상</strong> 가장 먼저 연결한 사람이 획득.</li>
+                  <li>누군가 나보다 더 긴 도로를 연결하면 카드를 즉시 뺏깁니다!</li>
+                  <li>상대방이 내 도로 중간 교차점에 마을을 지으면 도로가 끊깁니다.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="spec-card">
+              <div class="spec-img-wrap">
+                <img src="assets/largest_army.png" alt="최강 기사단 카드" class="spec-img" onclick="openLightbox(this.src, '최강 기사단 카드 (+2점)')">
+              </div>
+              <div class="spec-body">
+                <h4>최강 기사단 (Largest Army)</h4>
+                <div class="spec-vp">+2점</div>
+                <ul class="spec-list">
+                  <li>기사 발전카드를 <strong>3장 이상</strong> 먼저 사용하여 자기 앞에 펼친 사람이 획득.</li>
+                  <li>누군가 나보다 더 많은 기사 카드를 사용하면 카드가 그 사람에게 넘어갑니다!</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Building Cost Card -->
+        <div class="component-card">
+          <div class="comp-header">
+            <div class="comp-badge">건설 가이드</div>
+            <h3>건설비용 카드 (Building Costs)</h3>
+          </div>
+          <div class="comp-with-img-row">
+            <img src="assets/building_cost.png" alt="건설비용 카드" class="cost-card-img" onclick="openLightbox(this.src, '건설비용 참조표')">
+            <div class="cost-summary-list">
+              <p>각 플레이어마다 1장씩 앞에 두고 보는 공식 참조표입니다:</p>
+              <div class="cost-item">
+                <span class="cost-target">도로 1개</span>
+                <span class="cost-recipe">나무 1 + 흙 1</span>
+              </div>
+              <div class="cost-item">
+                <span class="cost-target">마을 1개</span>
+                <span class="cost-recipe">나무 1 + 흙 1 + 밀 1 + 양 1</span>
+              </div>
+              <div class="cost-item">
+                <span class="cost-target">도시 1개</span>
+                <span class="cost-recipe">밀 2 + 철 3 (마을 업그레이드)</span>
+              </div>
+              <div class="cost-item">
+                <span class="cost-target">발전카드 1장</span>
+                <span class="cost-recipe">밀 1 + 양 1 + 철 1</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Development Cards -->
+        <div class="component-card">
+          <div class="comp-header">
+            <div class="comp-badge purple">비장의 무기</div>
+            <h3>발전카드 3종 (Development Cards)</h3>
+          </div>
+          <div class="comp-photo-wrap">
+            <img src="assets/dev_cards.png" alt="발전카드 3종" class="comp-photo" onclick="openLightbox(this.src, '발전카드 3종 (기사, 진보, 승점)')">
+            <div class="photo-caption">▲ 발전카드 3종 (기사, 진보, 승점)</div>
+          </div>
+
+          <div class="dev-type-grid">
+            <div class="dev-box">
+              <div class="dev-icon">⚔️</div>
+              <strong>기사 카드 (Knight)</strong>
+              <p>즉시 도둑을 다른 땅으로 옮기고 인접 플레이어의 자원 1장을 훔쳐옵니다. 3장을 모으면 최강 기사단(2점)!</p>
+            </div>
+            <div class="dev-box">
+              <div class="dev-icon">📜</div>
+              <strong>진보 카드 (Progress)</strong>
+              <p>도로 건설(무료 도로 2개), 독점(특정 자원 전원 강탈), 풍요(원하는 자원 2장) 등 강력한 특수 효과 발동!</p>
+            </div>
+            <div class="dev-box">
+              <div class="dev-icon">⭐</div>
+              <strong>승점 카드 (Victory Point)</strong>
+              <p>숨겨진 +1점! 남들에게 비공개로 갖고 있다가, 자신의 점수가 10점에 도달하는 순간 공개하여 깜짝 승리!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= STEP 4: 보드판 배치 ================= -->
+      <section class="step-card" id="step-4">
+        <div class="section-lead">
+          처음 카탄을 플레이할 때는 밸런스가 완벽히 맞춰진 <strong>초보자 공식 추천 배치</strong>대로 세팅하세요!
+        </div>
+
+        <!-- 3-Step Assembly Guide -->
+        <div class="assembly-card">
+          <div class="step-header">
+            <span class="step-badge">세팅 순서 3단계</span>
+            <h3>보드 조립 순서도</h3>
+          </div>
+          <div class="assembly-img-box">
+            <img src="assets/board_steps.png" alt="보드 조립 3단계" class="board-steps-img" onclick="openLightbox(this.src, '보드 조립 3단계')">
+          </div>
+          <div class="step-numbered-list">
+            <div class="s-step">
+              <span class="s-num">1</span>
+              <div class="s-text">
+                <strong>테두리 조립</strong>
+                <p>바다 프레임 6개를 홈에 맞추어 육각형 테두리를 먼저 만듭니다.</p>
+              </div>
+            </div>
+            <div class="s-step">
+              <span class="s-num">2</span>
+              <div class="s-text">
+                <strong>지형 타일 19개 배치</strong>
+                <p>테두리 안쪽에 19개의 육각 지형 타일(숲4, 언덕3, 초원4, 농지4, 산3, 사막1)을 그림대로 채웁니다.</p>
+              </div>
+            </div>
+            <div class="s-step">
+              <span class="s-num">3</span>
+              <div class="s-text">
+                <strong>숫자 칩 올리기</strong>
+                <p>사막을 제외한 각 지형 위에 지정된 숫자 칩(2~12)을 올려놓고, 사막에는 도둑 말을 올립니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Board Full Diagram & Starting Resources -->
+        <div class="component-card">
+          <div class="comp-header">
+            <div class="comp-badge green">초보자 배치도</div>
+            <h3>추천 시작 위치 & 초기 자원 룰</h3>
+          </div>
+          
+          <div class="board-view-wrap">
+            <img src="assets/board_full.png" alt="초보자용 카탄 완성 보드판" class="board-main-img" onclick="openLightbox(this.src, '초보자 추천 완성 보드판')">
+            <div class="board-tap-hint">🔍 터치하면 이미지를 크게 볼 수 있습니다</div>
+          </div>
+
+          <div class="setup-rules-box">
+            <h4>📍 플레이어별 시작 마을 (2개)과 도로 (2개)</h4>
+            <p>초보자 배치도에 맞춰 각 플레이어는 미리 지정된 교차점에 <strong>마을 2개와 도로 2개</strong>를 놓고 시작합니다.</p>
+            
+            <div class="starting-res-card">
+              <div class="sr-header">🎁 시작 자원 획득 규칙 (매우 중요!)</div>
+              <p>게임 시작 시, 맵에 <strong>알파벳(A~D)이 쓰여 있는 두 번째 마을</strong>에 인접한 3개 지형에서 자원을 1장씩 받습니다:</p>
+              <ul class="sr-list">
+                <li><strong class="c-red">빨간색 (A)</strong>: 8(산), 5(언덕) 등 인접 땅 자원 획득</li>
+                <li><strong class="c-blue">파란색 (B)</strong>: 8(숲), 4(농지), 3(산)에서 <strong>나무 1장, 밀 1장, 철 1장</strong> 획득</li>
+                <li><strong class="c-orange">주황색 (C)</strong>: 3(산), 6(농지), 11(농지)에서 <strong>철 1장과 밀 2장</strong> 획득</li>
+                <li><strong class="c-white">하얀색 (D)</strong>: 9(숲), 10(산), 11(초원) 인접 자원 획득</li>
+              </ul>
+              <div class="sr-note">※ 얻은 자원 카드는 다른 사람에게 보여주지 않고 손에 쥐고 시작합니다.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= STEP 5: 게임 진행 ================= -->
+      <section class="step-card" id="step-5">
+        <div class="section-lead">
+          가장 나이가 많은 플레이어부터 시작하여 시계 방향(왼쪽)으로 차례를 진행합니다.
+          내 차례가 되면 <strong>아래 3가지 행동을 반드시 순서대로</strong> 수행합니다:
+        </div>
+
+        <!-- 3 Turn Phases -->
+        <div class="action-flow-container">
+          
+          <!-- Phase 1: Dice -->
+          <div class="phase-block">
+            <div class="phase-badge p1">액션 1 (필수)</div>
+            <div class="phase-card">
+              <div class="phase-title-row">
+                <span class="phase-icon">🎲</span>
+                <h3>1. 자원 얻기 (주사위 굴리기)</h3>
+              </div>
+              <p class="phase-desc">주사위 2개를 굴립니다. 나온 두 주사위 눈의 <strong>합(2~12)</strong>에 해당하는 숫자 칩이 놓인 모든 지형에서 자원이 생산됩니다.</p>
+              
+              <div class="rule-callout">
+                <strong>누가 자원을 받나요?</strong>
+                <p>주사위를 굴린 사람뿐만 아니라, <strong>그 숫자의 땅에 마을이나 도시를 지은 모든 플레이어</strong>가 자원을 받습니다!</p>
+                <ul>
+                  <li><strong>마을 1개</strong> 인접: 해당 자원카드 <strong>1장</strong> 획득</li>
+                  <li><strong>도시 1개</strong> 인접: 해당 자원카드 <strong>2장</strong> 획득</li>
+                </ul>
+              </div>
+
+              <div class="dice-prob-box">
+                <span class="dp-tag">주사위 확률 팁</span>
+                <p>2개의 주사위를 굴릴 때 <strong>7(도둑)</strong>이 6가지 조합으로 가장 잘 나오며, <strong>6과 8(빨간색 숫자)</strong>이 5가지 조합으로 그다음으로 가장 잘 나옵니다! 반면 2와 12는 나올 확률이 가장 낮습니다.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phase 2: Trade -->
+          <div class="phase-block">
+            <div class="phase-badge p2">액션 2 (선택)</div>
+            <div class="phase-card">
+              <div class="phase-title-row">
+                <span class="phase-icon">🤝</span>
+                <h3>2. 거래하기 (부족한 자원 확보)</h3>
+              </div>
+              <p class="phase-desc">원하는 건물을 짓기 위해 부족한 자원을 교환합니다. 거래에는 2가지 방식이 있습니다:</p>
+
+              <div class="trade-types-grid">
+                <div class="trade-box">
+                  <h4>a) 내륙 거래 (플레이어 간 거래)</h4>
+                  <p>현재 턴인 플레이어는 <strong>다른 모든 플레이어와 자유롭게 자원을 흥정</strong>할 수 있습니다. "나무 1장 줄 테니 밀 1장 주실 분?"처럼 1:1, 2:1 등 원하는 비율로 합의하면 됩니다.</p>
+                  <div class="warn-pill">⚠️ 주의: 차례가 아닌 다른 플레이어들끼리는 거래할 수 없습니다!</div>
+                </div>
+
+                <div class="trade-box">
+                  <h4>b) 해상 거래 (은행/공동창고 거래)</h4>
+                  <p>다른 사람이 거래해주지 않아도 언제든 은행과 정해진 비율로 거래할 수 있습니다:</p>
+                  <ul class="trade-ratio-list">
+                    <li><span class="ratio">기본 4 : 1</span> 같은 자원 4장 ➔ 원하는 자원 1장</li>
+                    <li><span class="ratio orange">항구 3 : 1</span> 일반 항구에 마을이 있으면 같은 자원 3장 ➔ 1장</li>
+                    <li><span class="ratio green">특수 2 : 1</span> 특수 항구(예: 나무)에 마을이 있으면 그 자원 2장 ➔ 1장</li>
+                  </ul>
+                  <img src="assets/detail/maritime_trade_page3.png" alt="해상 거래 다이어그램" class="trade-diagram-img" onclick="openLightbox(this.src, '해상 거래 4:1, 3:1, 2:1 규칙')">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phase 3: Build -->
+          <div class="phase-block">
+            <div class="phase-badge p3">액션 3 (선택)</div>
+            <div class="phase-card">
+              <div class="phase-title-row">
+                <span class="phase-icon">🔨</span>
+                <h3>3. 건설하기 & 발전카드 구입</h3>
+              </div>
+              <p class="phase-desc">모은 자원을 은행에 반납하고 원하는 시설을 건설하거나 발전카드를 뽑습니다:</p>
+
+              <div class="recipe-cards-list">
+                <div class="recipe-card">
+                  <div class="r-top">
+                    <strong>도로 (Road)</strong>
+                    <span class="r-cost">나무 1 + 흙 1</span>
+                  </div>
+                  <p>반드시 자신의 기존 도로/마을과 연결된 길에만 1개 건설. (길 하나당 도로 1개)</p>
+                </div>
+
+                <div class="recipe-card">
+                  <div class="r-top">
+                    <strong>마을 (Settlement)</strong>
+                    <span class="r-cost">나무 1 + 흙 1 + 밀 1 + 양 1</span>
+                  </div>
+                  <p>자신의 도로와 연결된 빈 교차점에 건설. <strong>(승점 1점)</strong><br>
+                  ※ <strong>간격 규칙</strong>: 인접 교차점에 어떤 마을/도시도 없어야 함!</p>
+                </div>
+
+                <div class="recipe-card">
+                  <div class="r-top">
+                    <strong>도시 (City)</strong>
+                    <span class="r-cost">밀 2 + 철 3</span>
+                  </div>
+                  <p><strong>기존에 이미 지어진 마을을 교체(업그레이드)</strong>하여 건설. <strong>(승점 2점)</strong><br>
+                  인접 지형에서 자원을 2배(2장씩) 생산합니다.</p>
+                </div>
+
+                <div class="recipe-card">
+                  <div class="r-top">
+                    <strong>발전카드 (Dev Card)</strong>
+                    <span class="r-cost">밀 1 + 양 1 + 철 1</span>
+                  </div>
+                  <p>발전카드 더미 맨 위에서 1장을 비공개로 뽑습니다. (기사, 진보, 승점 중 1장)</p>
+                </div>
+              </div>
+
+              <div class="dev-rule-note">
+                ⚡ <strong>발전카드 사용 룰</strong>: 자신의 차례 중 언제라도 (주사위를 굴리기 전에도!) 1장을 쓸 수 있습니다. 단, <strong>이번 턴에 새로 구입한 카드는 바로 쓸 수 없습니다</strong> (승점 카드는 10점 승리 선언 시 예외).
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ================= STEP 6: 게임 종료 & 점수 계산기 ================= -->
+      <section class="step-card" id="step-6">
+        <div class="section-lead">
+          어떤 플레이어가 <strong>승점 10점 이상</strong>을 달성하면, 그 플레이어의 차례에 즉시 게임이 종료되며 승리합니다!
+        </div>
+
+        <!-- Score Breakdown Table -->
+        <div class="component-card">
+          <div class="comp-header">
+            <div class="comp-badge gold">승점 표</div>
+            <h3>카탄 승점 획득 총정리</h3>
+          </div>
+          <div class="score-table">
+            <div class="st-row header">
+              <span>항목</span>
+              <span>조건</span>
+              <span>승점</span>
+            </div>
+            <div class="st-row">
+              <span class="st-name">🏡 마을</span>
+              <span class="st-desc">보드판에 건설된 마을 1개당</span>
+              <span class="st-pt">+1점</span>
+            </div>
+            <div class="st-row">
+              <span class="st-name">🏰 도시</span>
+              <span class="st-desc">마을을 업그레이드한 도시 1개당</span>
+              <span class="st-pt">+2점</span>
+            </div>
+            <div class="st-row">
+              <span class="st-name">🛣️ 최장 교역로</span>
+              <span class="st-desc">끊기지 않고 가장 긴 5개 이상 도로</span>
+              <span class="st-pt">+2점</span>
+            </div>
+            <div class="st-row">
+              <span class="st-name">⚔️ 최강 기사단</span>
+              <span class="st-desc">기사 카드 3장 이상 가장 많이 사용</span>
+              <span class="st-pt">+2점</span>
+            </div>
+            <div class="st-row">
+              <span class="st-name">⭐ 승점 발전카드</span>
+              <span class="st-desc">발전카드에서 뽑은 승점 카드 1장당</span>
+              <span class="st-pt">+1점</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Score Calculator -->
+        <div class="calc-card">
+          <div class="calc-header">
+            <span class="calc-icon">🧮</span>
+            <div>
+              <h3>실시간 내 승점 계산기</h3>
+              <p>현재 내 건설 상황을 터치해 실시간 점수를 확인하세요!</p>
+            </div>
+          </div>
+
+          <div class="calc-total-display">
+            <div class="calc-circle" id="calcCircle">
+              <span class="cur-score" id="totalScore">2</span>
+              <span class="max-score">/ 10점</span>
+            </div>
+            <div class="calc-status" id="calcStatus">
+              <div class="status-msg">아직 개척 중입니다!</div>
+              <div class="status-sub">10점까지 <strong>8점</strong> 남음</div>
+            </div>
+          </div>
+
+          <div class="calc-controllers">
+            <!-- Village count -->
+            <div class="calc-item">
+              <div class="ci-info">
+                <strong>마을 (개당 1점)</strong>
+                <span>시작 시 2개 기본</span>
+              </div>
+              <div class="counter-box">
+                <button class="btn-step" onclick="changeScore('settlements', -1)">-</button>
+                <span class="val" id="val-settlements">2</span>
+                <button class="btn-step" onclick="changeScore('settlements', 1)">+</button>
+              </div>
+            </div>
+
+            <!-- City count -->
+            <div class="calc-item">
+              <div class="ci-info">
+                <strong>도시 (개당 2점)</strong>
+                <span>마을에서 업그레이드</span>
+              </div>
+              <div class="counter-box">
+                <button class="btn-step" onclick="changeScore('cities', -1)">-</button>
+                <span class="val" id="val-cities">0</span>
+                <button class="btn-step" onclick="changeScore('cities', 1)">+</button>
+              </div>
+            </div>
+
+            <!-- Longest road -->
+            <div class="calc-item check-item">
+              <div class="ci-info">
+                <strong>최장 교역로 (+2점)</strong>
+                <span>도로 5개 이상 최장 연결</span>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="check-road" onchange="toggleBonus('road', this.checked)">
+                <span class="slider"></span>
+              </label>
+            </div>
+
+            <!-- Largest army -->
+            <div class="calc-item check-item">
+              <div class="ci-info">
+                <strong>최강 기사단 (+2점)</strong>
+                <span>기사 카드 3장 이상 최다 사용</span>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="check-army" onchange="toggleBonus('army', this.checked)">
+                <span class="slider"></span>
+              </label>
+            </div>
+
+            <!-- VP Dev Cards -->
+            <div class="calc-item">
+              <div class="ci-info">
+                <strong>승점 발전카드 (개당 1점)</strong>
+                <span>비공개 승점 카드 장수</span>
+              </div>
+              <div class="counter-box">
+                <button class="btn-step" onclick="changeScore('vpCards', -1)">-</button>
+                <span class="val" id="val-vpCards">0</span>
+                <button class="btn-step" onclick="changeScore('vpCards', 1)">+</button>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn-reset-calc" onclick="resetCalculator()">🔄 계산기 초기화</button>
+        </div>
+      </section>
+
+      <!-- ================= STEP 7: 핵심 규칙 & FAQ ================= -->
+      <section class="step-card" id="step-7">
+        <div class="section-lead">
+          초보자가 가장 많이 실수하는 <strong>카탄 4대 핵심 규칙</strong>과 자주 묻는 질문입니다.
+        </div>
+
+        <!-- Rule 1: Distance Rule -->
+        <div class="rule-deep-card">
+          <div class="rd-header danger">
+            <span class="rd-icon">🚫</span>
+            <h3>1. 간격 규칙 (거리 규칙)</h3>
+          </div>
+          <p class="rd-desc">마을을 지을 때는 <strong>인접한 교차점에 다른 마을이나 도시가 없어야 합니다.</strong> (자신의 건물 포함!)</p>
+          <div class="rd-img-wrap">
+            <img src="assets/detail/distance_rule_diagram.png" alt="간격 규칙 다이어그램" class="rd-diagram" onclick="openLightbox(this.src, '간격 규칙 다이어그램')">
+          </div>
+          <div class="rd-point">
+            👉 즉, <strong>마을과 마을 사이에는 최소한 도로 2칸 이상의 거리</strong>가 항상 떨어져 있어야만 새 마을을 지을 수 있습니다!
+          </div>
+        </div>
+
+        <!-- Rule 2: Dice 7 & Robber -->
+        <div class="rule-deep-card">
+          <div class="rd-header warning">
+            <span class="rd-icon">🎲</span>
+            <h3>2. 주사위 7과 도둑: 3단계 처리 절차</h3>
+          </div>
+          <p class="rd-desc">주사위를 굴려 <strong>7</strong>이 나오면 아무도 자원을 받지 못하며, 다음 3단계를 즉시 진행합니다:</p>
+
+          <div class="robber-steps">
+            <div class="rs-item">
+              <span class="rs-step-num">Step 1</span>
+              <div class="rs-body">
+                <strong>손패 절반 버리기 (8장 이상 보유자)</strong>
+                <p>자원 카드를 <strong>8장 이상</strong> 든 사람은 누구나 즉시 <strong>절반(홀수면 내림)</strong>을 골라 은행에 버려야 합니다.</p>
+              </div>
+            </div>
+
+            <div class="rs-item">
+              <span class="rs-step-num">Step 2</span>
+              <div class="rs-body">
+                <strong>도둑 말 이동 (필수)</strong>
+                <p>주사위를 굴린 플레이어는 도둑 말을 <strong>반드시 다른 지형 타일</strong>로 옮겨야 합니다.</p>
+              </div>
+            </div>
+
+            <div class="rs-item">
+              <span class="rs-step-num">Step 3</span>
+              <div class="rs-body">
+                <strong>자원 1장 무작위 강탈</strong>
+                <p>도둑이 도착한 땅에 마을/도시를 지은 플레이어 중 1명을 골라 그 사람의 자원카드 1장을 무작위로 빼앗아옵니다.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="rd-point">
+            🚨 <strong>도둑 블로킹 효과</strong>: 도둑이 머물러 있는 땅은 그 숫자의 주사위가 나와도 <strong>어떤 자원도 생산하지 못합니다!</strong> (도둑이 쫓겨날 때까지 자원 봉쇄)
+          </div>
+        </div>
+
+        <!-- Rule 3: Dev card usage -->
+        <div class="rule-deep-card">
+          <div class="rd-header info">
+            <span class="rd-icon">🃏</span>
+            <h3>3. 발전카드 사용 시 꼭 알아둘 점</h3>
+          </div>
+          <ul class="faq-bullet-list">
+            <li><strong>한 턴에 1장만</strong> 사용할 수 있습니다.</li>
+            <li><strong>방금 구입한 턴</strong>에는 사용할 수 없습니다 (다음 내 턴부터 사용 가능).</li>
+            <li><strong>주사위를 던지기 전</strong>에도 사용할 수 있습니다! (예: 주사위 던지기 전에 기사 카드로 도둑을 치워 내 땅의 생산을 살린 뒤 주사위 굴리기).</li>
+            <li><strong>승점 카드(1점)</strong>는 사용 제한에 걸리지 않으며, 10점이 되어 게임을 끝낼 때 한꺼번에 여러 장을 공개할 수 있습니다.</li>
+          </ul>
+        </div>
+
+        <!-- Rule 4: Road Cut Rule -->
+        <div class="rule-deep-card">
+          <div class="rd-header success">
+            <span class="rd-icon">🛣️</span>
+            <h3>4. 최장 교역로가 끊어지는 경우</h3>
+          </div>
+          <div class="rd-img-wrap">
+            <img src="assets/detail/longest_road_diagram.png" alt="최장 교역로 도로 끊김 예시" class="rd-diagram" onclick="openLightbox(this.src, '최장 교역로 도로 끊김 예시 다이어그램')">
+          </div>
+          <p class="rd-desc">
+            내가 6개의 도로를 한 줄로 길게 연결해 최장 교역로를 차지하고 있더라도, 
+            <strong>상대방이 내 도로 사이의 빈 교차점에 마을을 건설</strong>하면 내 도로가 끊겨버립니다! 
+            (예: 6개 도로가 4개와 2개로 분단되어 최장 교역로를 상대에게 빼앗길 수 있음)
+          </p>
+        </div>
+
+      </section>
+
+    </main>
+
+    <!-- Bottom Navigation Bar -->
+    <footer class="app-footer">
+      <button id="prevBtn" class="btn-nav prev disabled" onclick="navigateStep(-1)">
+        <span class="arrow">◀</span> 이전
+      </button>
+      <div class="step-indicator">
+        <span id="currentStepNum">1</span>/7장
+      </div>
+      <button id="nextBtn" class="btn-nav next" onclick="navigateStep(1)">
+        다음 <span class="arrow">▶</span>
+      </button>
+    </footer>
+  </div>
+
+  <!-- Fullscreen Image Lightbox Modal -->
+  <div id="lightbox" class="lightbox-modal" onclick="closeLightbox()">
+    <div class="lightbox-content" onclick="event.stopPropagation()">
+      <div class="lb-header">
+        <span id="lbTitle" class="lb-title">이미지 확대 보기</span>
+        <button class="lb-close" onclick="closeLightbox()">✕</button>
+      </div>
+      <div class="lb-body">
+        <img id="lbImg" src="" alt="확대 이미지">
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
